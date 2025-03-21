@@ -1,0 +1,84 @@
+/* Navbar base styling */
+.navbar {
+  width: 100vw;
+  height: 67px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #b1aeae;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Logo styling */
+.navbar-logo {
+  width: 150px;
+  height: auto;
+}
+
+/* Icon container styling */
+.navbar-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Navbar icons */
+.navbar-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Mobile & Tablet Responsiveness */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .navbar-logo {
+    width: 120px;
+  }
+
+  .navbar-icons {
+    gap: 10px;
+  }
+
+  .navbar-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Mobile View (smaller screens) */
+@media (max-width: 600px) {
+  .navbar {
+    height: 60px;
+  }
+
+  .navbar-logo {
+    width: 100px;
+  }
+
+  .navbar-icons {
+    gap: 8px;
+  }
+
+  .navbar-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Dark Mode Styling */
+[data-theme="dark"] .navbar {
+  background-color: #333;
+  color: #fff;
+}
+
+[data-theme="dark"] .navbar-icon {
+  filter: invert(1);
+  transition: 0.3s ease-in-out;
+}
