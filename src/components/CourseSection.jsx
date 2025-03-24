@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import "../styles/courseSection.css";
 import ChapterSection from "./ChapterSection";
+import Modal from "./Modal";
 
 
 const CourseSection = () => {
  
   const [courseData, setCourseData] = useState(null);
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     fetch("/src/data/courseData.json")
@@ -28,11 +29,15 @@ const CourseSection = () => {
           </div>
         </div>
 
-        <button className="start-button">
+        <button className="start-button" onClick={() => setIsModalOpen(true)}>
           Start learning
         </button>
       </div>
       <ChapterSection/>
+
+
+      {/* Modal Component */}
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 };

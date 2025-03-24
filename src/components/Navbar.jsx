@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { ThemeContext } from "../context/ThemeContext"; 
 import "../styles/navbar.css";
 
 const Navbar = () => {
+  const { darkMode, setDarkMode } = useContext(ThemeContext); 
+
   const [navItems, setNavItems] = useState([]);
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("theme") === "dark"
-  );
 
   useEffect(() => {
     fetch("/src/data/navbarData.json")
@@ -14,19 +14,12 @@ const Navbar = () => {
       .catch((error) => console.error("Error loading navbar data:", error));
   }, []);
 
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", darkMode ? "dark" : "light");
-    localStorage.setItem("theme", darkMode ? "dark" : "light");
-  }, [darkMode]);
-
-  const toggleTheme = () => setDarkMode(!darkMode);
-
   return (
     <nav className="navbar">
       {/* Logo */}
       <div className="logo-container">
         <img
-          src="./src/assets/navBar/logo.svg"
+          src="./public/assets/navBar/logo.svg"
           alt="logo"
           className="navbar-logo"
         />
@@ -34,15 +27,13 @@ const Navbar = () => {
 
       {/* Navbar icons */}
       <div className="navbar-icons">
-        {/* First icon toggles dark mode */}
-        {navItems.length > 0 && (
-          <img
-            src={darkMode ? "/src/assets/navBar/moon.png" : "/src/assets/navBar/moon.png"}
-            alt="Toggle Dark Mode"
-            className="navbar-icon"
-            onClick={toggleTheme}
-          />
-        )}
+        {/* Dark Mode Toggle */}
+        <img
+          src={darkMode ? "/public/assets/navBar/moon.png" : "/public/assets/navBar/moon.png"}
+          alt="Toggle Dark Mode"
+          className="navbar-icon"
+          onClick={() => setDarkMode(!darkMode)}
+        />
 
         {/* Other icons */}
         {navItems.slice(1).map((item, index) => (

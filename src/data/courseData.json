@@ -4,9 +4,42 @@
     "chapters": [
       {
         "title": "Evaluate Mathematical Expressions in Python",
-        "image": "./src/assets/courseSection/book.png",
+        "image": "../public/assets/courseSection/book.png",
         "topics": [
-         
+          {
+            "topicNo": "Topic - 1",
+            "title": "Merge Two Lists Without Using Extend",
+            "subtopics": [
+              {
+                "subtopicNo": "Subtopic - 1",
+                "title": "Combine two lists using loops, the + operator, or other methods."
+              },
+              {
+                "subtopicNo": "Subtopic - 2",
+                "title": "Explore list comprehension for merging lists."
+              },
+              {
+                "subtopicNo": "Subtopic - 3",
+                "title": "Handle duplicates and edge cases during merging."
+              }
+            ]
+          },
+          {
+            "topicNo": "Mini Task",
+            "title": "There will be a mini task after the topic — complete it to proceed to the next topic."
+          },
+          {
+            "topicNo": "Topic - 2",
+            "title": "Merge Two Lists Without Using Extend"
+          },
+          {
+            "topicNo": "Challenging Task",
+            "title": "There will be a final challenging task — complete it to proceed to the next chapter."
+          },
+          {
+            "topicNo": "Topic - 3",
+            "title": "Merge Two Lists Without Using Extend"
+          }
         ]
       },
       {
@@ -23,14 +56,7 @@
         "title": "Swap Two Variables Without Temp Variable",
         "image": "./src/assets/courseSection/book.png",
         "topics": []
-      },
-      {
-        "title": "Swap Two Variables Without Temp Variable",
-        "image": "./src/assets/courseSection/book.png",
-        "topics": []
       }
     ]
   }
 ]
-
-

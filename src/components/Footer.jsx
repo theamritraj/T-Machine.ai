@@ -2,11 +2,16 @@ import "../styles/footer.css";
 
 const Footer = () => {
   return (
-    <footer className="text-center text-sm py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white">
-      <div>Terms and Condition</div> |
-      <div>Privacy Policy</div> |
-      <div>About Us</div> |
-      <div>Refund Policy</div>
+    <footer className="footer">
+      <div className="footer-links">
+        <a href="#">Terms and Conditions</a>
+        <span>|</span>
+        <a href="#">Privacy Policy</a>
+        <span>|</span>
+        <a href="#">About Us</a>
+        <span>|</span>
+        <a href="#">Refund Policy</a>
+      </div>
     </footer>
   );
 };

@@ -1,21 +1,21 @@
+import PropTypes from "prop-types";
+import "../styles/modal.css";
+
 const Modal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="relative bg-white rounded-lg shadow-lg w-96 text-center">
+    <div className="modal-overlay">
+      <div className="modal-container">
         <img
           src="/src/assets/courseSection/Tmachine.svg"
           alt="robot mascot"
-          className="absolute -top-10 -left-10 w-24 h-24"
+          className="robot-image"
         />
-        <div className="bg-gradient-to-r from-purple-500 to-blue-400 text-white p-4 rounded-t-lg text-lg font-semibold">
-          You're about to begin your learning journey! Dive in, explore, and enhance your knowledge. Let's get started!
+        <div className="modal-header">
+          You&#39;re about to begin your learning journey! Dive in, explore, and enhance your knowledge. Let&#39;s get started!
         </div>
-        <button
-          className="mt-4 mb-4 border border-purple-500 text-purple-500 py-2 px-6 rounded-md hover:bg-purple-500 hover:text-white transition"
-          onClick={onClose}
-        >
+        <button className="modal-button" onClick={onClose}>
           Yes
         </button>
       </div>
@@ -23,6 +23,10 @@ const Modal = ({ isOpen, onClose }) => {
   );
 };
 
+// Add PropTypes validation
+Modal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
+
 export default Modal;
-
-

@@ -1,3 +1,5 @@
+import "../styles/aside.css";
+
 const Aside = () => {
   const items = [
     { icon: "📊", label: "Progress" },
@@ -7,14 +9,11 @@ const Aside = () => {
   ];
 
   return (
-    <aside className="w-16 bg-white shadow-lg h-screen flex flex-col items-center justify-start gap-6 py-4 fixed right-0">
+    <aside className="aside">
       {items.map((item, index) => (
-        <div
-          key={index}
-          className="flex flex-col items-center gap-1 cursor-pointer hover:text-purple-500 transition-all"
-        >
-          <span className="text-2xl">{item.icon}</span>
-          <span className="text-xs font-semibold text-gray-600">{item.label}</span>
+        <div key={index} className="aside-item">
+          <span className="aside-icon">{item.icon}</span>
+          <span className="aside-label">{item.label}</span>
         </div>
       ))}
     </aside>
@@ -22,3 +21,4 @@ const Aside = () => {
 };
 
 export default Aside;
+

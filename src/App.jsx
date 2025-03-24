@@ -1,17 +1,32 @@
 
+
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Aside from "./components/Aside";
 import CourseSection from "./components/CourseSection";
-//import "./styles/app.css";
+import SubtopicPage from "./pages/SubtopicPage"; 
+import "./App.css";
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-      <CourseSection/>
-     
+      <main>
+       
+        <div className="course-container">
+          <Routes>
+            <Route path="/" element={<CourseSection />} />
+            <Route path="/subtopic/:id" element={<SubtopicPage />} />
+          </Routes>
+        </div>
+        <Aside />
+      </main>
       <Footer />
-    </>
+    </Router>
   );
 }
 
 export default App;
+
