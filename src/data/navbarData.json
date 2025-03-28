@@ -1,8 +1,7 @@
 [
-  { "alt": "Moon", "src": "./pubic/assets/navBar/moon.png" },
-  { "alt": "Home", "src": "./public/assets/navBar/home.png" },
-  { "alt": "File", "src": "./public/assets/navBar/vector.png" },
-  { "alt": "Bar", "src": "./public/assets/navBar/bar.png" },
-  { "alt": "Person", "src": "./public/assets/navBar/person.png" },
-  { "alt": "Logout", "src": "./public/assets/navBar/logout.svg" }
+  { "alt": "Home", "src": "/assets/navBar/home.svg" },
+  { "alt": "File", "src": "/assets/navBar/Vector.svg" },
+  { "alt": "Bar", "src": "/assets/navBar/bar.svg" },
+  { "alt": "Person", "src": "/assets/navBar/person.svg" },
+  { "alt": "Logout", "src": "/assets/navBar/logout.svg" }
 ]

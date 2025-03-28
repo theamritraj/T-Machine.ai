@@ -3,56 +3,86 @@
     "course": "Python Course",
     "chapters": [
       {
+        "number":1,
         "title": "Evaluate Mathematical Expressions in Python",
         "image": "../public/assets/courseSection/book.png",
         "topics": [
           {
+            "number":1,
             "topicNo": "Topic - 1",
             "title": "Merge Two Lists Without Using Extend",
             "subtopics": [
               {
+                "number":1,
                 "subtopicNo": "Subtopic - 1",
                 "title": "Combine two lists using loops, the + operator, or other methods."
               },
               {
+                "number":2,
                 "subtopicNo": "Subtopic - 2",
                 "title": "Explore list comprehension for merging lists."
               },
               {
+                "number":3,
                 "subtopicNo": "Subtopic - 3",
                 "title": "Handle duplicates and edge cases during merging."
               }
             ]
           },
           {
+            "number":2,
             "topicNo": "Mini Task",
             "title": "There will be a mini task after the topic — complete it to proceed to the next topic."
           },
           {
+            "number":3,
             "topicNo": "Topic - 2",
             "title": "Merge Two Lists Without Using Extend"
           },
           {
+            "number":4,
             "topicNo": "Challenging Task",
             "title": "There will be a final challenging task — complete it to proceed to the next chapter."
           },
           {
+            "number":5,
             "topicNo": "Topic - 3",
             "title": "Merge Two Lists Without Using Extend"
           }
         ]
       },
       {
+        "number":2,
         "title": "Find the GCD and LCM of Two Numbers",
         "image": "./src/assets/courseSection/book.png",
         "topics": []
       },
       {
+        "number":3,
         "title": "Convert Decimal to Binary and Hexadecimal",
         "image": "./src/assets/courseSection/book.png",
         "topics": []
       },
       {
+        "number":4,
+        "title": "Swap Two Variables Without Temp Variable",
+        "image": "./src/assets/courseSection/book.png",
+        "topics": []
+      },
+      {
+        "number":5,
+        "title": "Swap Two Variables Without Temp Variable",
+        "image": "./src/assets/courseSection/book.png",
+        "topics": []
+      },
+      {
+        "number":6,
+        "title": "Swap Two Variables Without Temp Variable",
+        "image": "./src/assets/courseSection/book.png",
+        "topics": []
+      },
+      {
+        "number":7,
         "title": "Swap Two Variables Without Temp Variable",
         "image": "./src/assets/courseSection/book.png",
         "topics": []

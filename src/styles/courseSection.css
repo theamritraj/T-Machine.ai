@@ -46,3 +46,192 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.chapter-section{
+  padding: 10px;
+  background: #B3C8FF;
+  border: 1px solid #DADADA;
+ margin-left: 20px;
+}
+.cptn, .cptn-1{
+  font-size: 18px;
+  font-weight: 500;
+  color: #214DBA;
+  padding: 5px;
+}
+.cptn-1{
+  margin-left: 60px;
+}
+.chapter{
+  background-color: #f8f8f8;
+  cursor: pointer;
+  width: 200px;
+  height: 38px;
+  background: #CEDCFE;
+  box-shadow: 0px 0px 10px 0px rgba(135, 135, 135, 0.4);
+}
+
+.topic-row{
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+
+.topic-section{
+border :1px solid #FFc642;
+background: #FFF9bf;
+ padding: 10px;
+ width: 88vw;
+ margin-left: 20px;
+}
+
+
+.topic-heading-left, .topic-heading-right{
+  font-weight: 500;
+  font-size: 18px;
+  color: #B68618;
+  padding: 10px;
+}
+.topic-heading-right{
+  margin-left: 50px;
+}
+
+
+.topic-left{
+  width: 170px;
+  height: 35px;
+  background-color: #FFEBBD;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: rgba(0,0,0,0.12);
+}
+
+.topic-right{
+  width: 1078px;
+  height: 35px;
+  background-color: #FFEBBD;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: rgba(0,0,0,0.12);
+  margin-left: 20px;
+}
+
+.subtopic-section{
+  border :1px solid #FFc642;
+  margin-left: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 83vw;
+}
+
+.subtopic-right{
+  margin-left: 20px;
+}
+
+
+.book-logo{
+    height: 25px;
+    width: 25px;
+    margin-right: -50px;
+    
+  }
+
+  .subtopic-logo{
+   background-color: rgba(191, 150, 247, 1);
+    border: 0.39px solid rgba(96, 32, 132, 1);
+    padding: 5px;
+    border-radius: 50%;
+  }
+
+
+
+
+  @media (max-width: 1024px) {
+    .topic-right {
+      width: auto;
+    }
+    .topic-left {
+      width: auto;
+    }
+    .topic-section,
+    .subtopic-section {
+      width: 75vw;
+      margin-left: 5px;
+      margin-right: 50px;
+    }
+    .course-section{
+      width: 90vw;
+    }
+    .chapter-section{
+      width: 85vw;
+      background-color: red;
+      margin-left: 25px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+  
+    .topic-section,
+    .subtopic-section {
+      width: 90vw;
+      margin-left: 5px;
+    }
+  
+  
+    .topic-left,
+    .topic-right {
+      width: auto;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .book-logo {
+      margin-right: 0;
+    }
+    .chapter-section{
+      width: 85vw;
+      margin-left: 20px;
+      background-color: green;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .chapter {
+      width: 100%;
+    }
+  
+    .topic-row {
+      flex-direction: column;
+    }
+  
+    .topic-left,
+    .topic-right {
+      width: 100%;
+    }
+    .chapter-section{
+      width: 85vw;
+      margin-left: 20px;
+      background-color: yellow;
+    }
+  }
+  
