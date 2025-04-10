@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FaChevronDown, FaChevronUp, FaInfoCircle } from "react-icons/fa";
 import Modal from "./Modal";
+import Aside from "./Aside"
 
 const CourseSection = () => {
   const [courseData, setCourseData] = useState(null);
@@ -56,6 +57,7 @@ const CourseSection = () => {
                 onClick={() => toggleChapter(chapterIndex)}
                 style={{ justifyContent: "space-between" }}
               >
+                 <img src="/assets/courseSection/book.png" alt="book-logo" className="book-logo" />
                 <span className="cursor-pointer">Chapter - {chapter.number}</span>
                 {openChapter === chapterIndex ? <FaChevronUp /> : <FaChevronDown />}
               </div>
@@ -73,7 +75,9 @@ const CourseSection = () => {
                 {chapter.topics.map((topic, topicIndex) => (
                   <div key={topicIndex}>
                     <div className="d-flex topic-row">
+                      
                       <button className="topic-left" onClick={() => toggleTopic(topicIndex)}>
+                      <img src="/assets/courseSection/topic-logo.png" alt="topic-logo" className="book-logo" />
                         Topic - {topic.number} {openTopic === topicIndex ? <FaChevronUp /> : <FaChevronDown />}
                       </button>
                       <div className="d-flex align-items-center flex-grow-1 rounded topic-right">
@@ -105,7 +109,9 @@ const CourseSection = () => {
           </div>
         ))}
       </div>
+      <Aside/>
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+        
     </>
   );
 };

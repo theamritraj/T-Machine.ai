@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Aside from "./components/Aside";
 import CourseSection from "./components/CourseSection";
 import SubtopicPage from "./pages/SubtopicPage";
 import { chapters } from "./data/chapters";  // ✅ Move chapters data to a separate file
@@ -18,7 +17,6 @@ function App() {
             <Route path="/subtopic/:chapterIndex/:topicIndex/:subtopicIndex" element={<SubtopicPage chapters={chapters} />} />
           </Routes>
         </div>
-        <Aside />
       </main>
       <Footer />
     </Router>
