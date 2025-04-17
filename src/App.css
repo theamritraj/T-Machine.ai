@@ -41,3 +41,12 @@ html, body {
   gap: 20px;
  
 }
+
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  color:black;
+}

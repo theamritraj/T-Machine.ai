@@ -1,7 +1,8 @@
 import { useParams, Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
-import "../styles/breadcrumb.css";
+import "../styles/SubtopicPage.css"
+import ChapterList from "../components/ChapterList";
 
 const SubtopicPage = ({ chapters }) => {
   const { chapterIndex, topicIndex, subtopicIndex } = useParams();
@@ -28,6 +29,7 @@ const SubtopicPage = ({ chapters }) => {
   return (
     <div className="course-section py-2">
       {/* Course Title */}
+      <div className="course-nav">
       <div className="course-info">
         <div className="course-tag">
           {courseData?.course || "Loading course..."}
@@ -51,8 +53,16 @@ const SubtopicPage = ({ chapters }) => {
           📝 Subtopic - {subtopicIdx + 1}: {subtopic?.title}
         </span>
       </nav>
+      </div>
 
       {/* Subtopic Content */}
+
+     <div>
+     <ChapterList/>
+     </div>
+
+
+
       
     </div>
   );

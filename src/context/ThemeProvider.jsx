@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { ThemeContext } from "./ThemeContext"; // ✅ Named Import
+import { ThemeContext } from "./ThemeContext"; 
 
 const ThemeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(() => {

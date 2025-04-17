@@ -15,7 +15,7 @@ const CourseSection = () => {
   useEffect(() => {
     fetch("/src/data/courseData.json")
       .then((res) => res.json())
-      .then((data) => setCourseData(data[0])) // Assuming the first course object is needed
+      .then((data) => setCourseData(data[0])) 
       .catch((err) => console.error("Failed to load course data:", err));
   }, []);
 
@@ -38,10 +38,16 @@ const CourseSection = () => {
             <div className="triangle-tip"></div>
           </div>
         </div>
+        <div>
         <button className="start-button" onClick={() => setIsModalOpen(true)}>
           Start learning
         </button>
+        </div>
       </div>
+
+
+
+
 
       {/* Chapter Section */}
       <div className="chapter-section mt-2">
@@ -86,12 +92,17 @@ const CourseSection = () => {
                       </div>
                     </div>
                     {openTopic === topicIndex && (
-                      <div className="p-2 mb-2 bg-pink bg-opacity-50 rounded">
+                      <div className="p-2 mb-3 bg-pink bg-opacity-50 rounded">
                         <div className="bg-warning bg-opacity-25 rounded subtopic-section">
+                        <div className="d-flex gap-5 mb-3">
+                            <div className="topic-heading-left">Subtopic No</div>
+                            <div className="topic-heading-right mx-4">Subtopic</div>
+                        </div>
                           {topic.subtopics.map((subtopic, subtopicIndex) => (
                             <div key={subtopicIndex} className="d-flex topic-row">
                               <Link to={`/subtopic/${chapterIndex}/${topicIndex}/${subtopicIndex}`} className="topic-left">
-                                Subtopic - {subtopic.number}
+                              <img src="/assets/courseSection/book.png" alt="book-logo" className="book-logo" />
+                               <div className="topiclbl"> Subtopic - {subtopic.number}</div>
                               </Link>
                               <div className="d-flex align-items-center flex-grow-1 rounded topic-right">
                                 <span>{subtopic.title}</span>

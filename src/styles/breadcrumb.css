@@ -1,16 +1,1 @@
-.breadcrumb-nav {
-}
 
-.breadcrumb-item {
-  text-decoration: none;
-  color: #6a6a6a;
-  font-weight: bold;
-}
-
-.breadcrumb-item:hover {
-  text-decoration: underline;
-}
-
-.breadcrumb-item.active {
-  color: #333;
-}

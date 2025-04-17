@@ -1,6 +1,5 @@
 .course-section {
-  display: flex;
-  align-items: center;
+ 
   gap: 20px;
   width: 100%;
 }
@@ -53,7 +52,7 @@
 
 
 
-
+/* Chapter Section CSS */
 
 
 
@@ -123,6 +122,9 @@ background: #FFF9bf;
   border-radius: 5px;
   padding: 5px;
   box-shadow: rgba(0,0,0,0.12);
+}
+.topiclbl{
+  margin-left: -50px;
 }
 
 .topic-right{
@@ -206,9 +208,7 @@ background: #FFF9bf;
       justify-content: center;
     }
   
-    .book-logo {
-      margin-right: 0;
-    }
+  
     .chapter-section{
       width: 85vw;
       margin-left: 20px;
@@ -248,4 +248,5 @@ background: #FFF9bf;
     gap: 20px;
    
   }
+  
   

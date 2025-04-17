@@ -65,7 +65,9 @@ background: #FFF9bf;
   padding: 5px;
   box-shadow: rgba(0,0,0,0.12);
 }
-
+.topiclbl{
+  margin-left: -50px;
+}
 .topic-right{
   width: 1078px;
   height: 35px;
